@@ -1,0 +1,36 @@
+{
+  "supported": {
+    "candidates": [{
+      "content": {
+        "parts": [{ "text": "For a general GST question, keep complete invoices and match eligible input tax credit to the relevant return period." }],
+        "role": "model"
+      },
+      "finishReason": "STOP"
+    }]
+  },
+  "followUp": {
+    "candidates": [{
+      "content": {
+        "parts": [{ "text": "For the follow-up, compare the invoice details with your purchase records before claiming the credit." }],
+        "role": "model"
+      },
+      "finishReason": "STOP"
+    }]
+  },
+  "referral": {
+    "candidates": [{
+      "content": {
+        "parts": [{ "text": "Please consult a Chartered Accountant for this filing-specific or disputed matter." }],
+        "role": "model"
+      },
+      "finishReason": "STOP"
+    }]
+  },
+  "failure": {
+    "error": {
+      "code": 503,
+      "message": "provider unavailable",
+      "status": "UNAVAILABLE"
+    }
+  }
+}
