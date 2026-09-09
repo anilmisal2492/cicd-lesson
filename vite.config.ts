@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: process.env.GITHUB_ACTIONS ? '/test-day-7/' : '/',
+  base: process.env.GITHUB_ACTIONS ? '/cicd-lesson/' : '/',
 })
