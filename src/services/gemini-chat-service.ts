@@ -8,7 +8,7 @@ import {
   type ChatService,
 } from './chat-service'
 
-export const GEMINI_MODEL = 'gemini-2.5-flash'
+export const GEMINI_MODEL = 'gemini-3.6-flash'
 export const GEMINI_MAX_OUTPUT_TOKENS = 1024
 
 function extractText(content: unknown): string {

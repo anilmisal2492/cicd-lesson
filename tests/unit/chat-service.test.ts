@@ -43,7 +43,7 @@ describe('CA persona and Gemini configuration', () => {
     await expect(service.sendMessage('What is GST?', [])).rejects.toMatchObject({
       category: 'missing-api-key',
     })
-    expect(GEMINI_MODEL).toBe('gemini-2.5-flash')
+    expect(GEMINI_MODEL).toBe('gemini-3.6-flash')
     expect(GEMINI_MAX_OUTPUT_TOKENS).toBe(1024)
   })
 })
